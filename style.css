@@ -1,82 +1,89 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;900&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-  text-align: center;
-  background-image: url("https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/superover-bg.png");
-  background-size: cover;
-  font-family: "Poppins", sans-serif;
-  color: white;
+    background-image: url(https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/superover-bg.png);
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins' , sans-serif;
+    overflow: hidden;
 }
-
 #logo {
-  width: 10vw;
-  margin-top: 5vh;
-}
-
-h1 {
-  font-size: 90px;
-  font-weight: 600;
-}
-
-section {
-  margin: 10vh auto;
-}
-
-#buttons {
-  width: 50%;
-}
-
-.ball {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: white;
-  margin: 5px;
-  color: black;
-  line-height: 30px;
-  font-weight: bold;
-  font-size: 2em;
-  text-align: center;
-  padding: 10px;
-}
-
-.scoreboard {
-  font-size: 3em;
-  font-weight: bold;
-}
-
+    margin-top: 25px;
+    width: 200px;
+}   
 .score {
-  padding: 30px;
-  height: auto;
-  border-radius: 20px;
-  margin: 0 50px;
+    width: 370px;
+    height: 320px;
+    border-radius: 20px;    
+    padding: 25px;
+    margin: 0 50px;
 }
-
-.button {
-  width: 100px;
-  font-size: 1.5em;
-  cursor: pointer;
-  margin: 0 30px;
+section {
+    display: flex;
+    justify-content:center;
+    margin: 10vh auto;
+    flex-wrap: wrap;
+    
 }
-
 #team1 {
-  display: inline-block;
-  background-color: #005fa2;
-}
+    background-color: #1D65AA;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 22px, rgba(0, 0, 0, 0.05) 0px 8px 16px;
 
+}
 #team2 {
-  display: inline-block;
-  background-color: #1fa83d;
+    background-color: #439430;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 22px, rgba(0, 0, 0, 0.05) 0px 8px 16px;
+
+}
+h1 {
+    font-size: 80px;
+    font-weight: 600;
+}
+.balls{
+    display: flex;
+
+}
+.ball {
+    background-color: white;
+    border-radius: 50px;
+    width: 45px;
+    height: 45px;
+    margin: 5px;
+    color: black;
+    font-size: 1.75em;
+    font-weight: bolder;
+    text-align: center;
+}
+.scoreboard {
+    font-size: 52px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: bold;
+    margin-top: 12px;
+}
+.button {
+    width: 95px;
+    margin: 0 30px;
+    cursor: pointer;
 }
 
-#team1-superover,
-#team2-superover {
-  margin: 20px;
+.button:active{
+    animation: clickbutton 0.2s ease-in-out;
+}
+@keyframes clickbutton {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
